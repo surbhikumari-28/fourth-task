@@ -1,0 +1,1 @@
+This code creates a simple webpage with a navigation menu and three images of flowers. It uses HTML and CSS to design the layout and includes media queries to make the webpage responsive and mobile-friendly. The navigation menu stacks vertically on smaller screens, and the images scale to fit their containers.
