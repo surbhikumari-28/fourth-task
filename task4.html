@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile-Friendly Layout</title>
+    <style>
+        .container {
+          width: 1200px;
+          margin: 0 auto;
+          padding: 20px;
+          box-shadow: 0 0 10px black;
+        }
+
+        .columns {
+          display: flex;
+          justify-content: space-between;
+        }
+
+        .column {
+          width: 33.33%;
+          float: left;
+          padding: 20px;
+        }
+
+        nav ul {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          background: linear-gradient(to right,rgba(255, 10, 10, 0.764),rgba(4, 4, 82, 0.808));
+          text-align: center;
+          height: 50px;
+          line-height: 50px;
+          width: 100%;
+          border-radius: 10px;
+          font-size: x-large;
+          font-family: Verdana, Geneva, Tahoma, sans-serif
+        }
+
+        nav ul li {
+          display: inline-block;
+          margin-left: 50px;
+          margin-right: 50px;
+        }
+
+        nav ul li a {
+          color: #fff;
+          text-decoration: none;
+          padding: 10px 20px;
+          transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+          background-color: #b1b1b163;
+        }
+
+        p,h1 {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        } 
+
+        nav {
+          position: sticky;
+          top: 0;
+          z-index: 1000;
+        }
+
+        @media (max-width: 768px) {
+          .container {
+             width: 100%;
+             padding: 20px;
+        }
+    
+          .columns {
+             flex-direction: column;
+        }
+    
+          .column {
+             width: 100%;
+             margin-bottom: 20px;
+        }
+    
+           nav ul {
+             display: block;
+             text-align: left;
+             height: auto;
+             line-height: normal;
+        }
+    
+           nav ul li {
+             display: block;
+             margin-bottom: 10px;
+        }
+    
+           nav ul li a {
+             display: block;
+             padding: 10px;
+        }
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="#">Home</a></li>               
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>   
+                <li><a href="#">Services</a></li>                
+            </ul>
+        </nav>
+        <div class="columns">
+            <div class="column">
+                <h1>Red rose</h1>
+                <p>A single beautiful red rose can brighten up anyones's day. The red rose is one of the most iconic and enduring symbols of love and passion in human culture. Its deep, velvety petals and vibrant color have captivated hearts for centuries.</p>
+                <img src="image.png" alt="Image" height="500px" width="350px">
+            </div>
+            <div class="column">
+                <h1>Sunflower</h1>
+                <p>Sunflowers are one of the most recognizable and beloved flowers in the world. With their bright yellow petals and tall, statuesque stems, sunflowers embody warmth, happiness, and adoration. But beyond their beauty, sunflowers also hold a deeper symbolism that has captivated artists, writers, and flower enthusiasts alike.</p>
+                <img src="sunflower.jpg" alt="Image" height="500px" width="350px">                                   
+            </div>
+            <div class="column">
+                <h1>Blue rose</h1>
+                <p>The blue rose is a rare and elusive flower that has captivated the imagination of people for centuries. Unlike red roses, which symbolize love and passion, or sunflowers, which represent warmth and loyalty, the blue rose is often associated with mystery, intrigue, and impossibility.</p>
+                <img src="blue.jpg" alt="Image" height="500px" width="350px">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
